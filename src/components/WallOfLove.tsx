@@ -1,4 +1,3 @@
-
 import React from "react";
 import styles from "./WallOfLove.module.css";
 
@@ -65,34 +64,26 @@ const testimonials = [
   },
 ];
 
-const linkedinIconSVG = (
-  <svg width="40" height="40" viewBox="0 0 32 32" fill="none">
-    <circle cx="16" cy="16" r="16" fill="#0A66C2"/>
-    <path d="M12.667 13.333H10V22H12.667V13.333ZM11.333 12.333C12.069 12.333 12.667 11.736 12.667 11C12.667 10.264 12.069 9.66699 11.333 9.66699C10.597 9.66699 10 10.264 10 11C10 11.736 10.597 12.333 11.333 12.333ZM22 17.667V22H19.333V18.167C19.333 17.333 18.667 16.667 17.833 16.667C17 16.667 16.333 17.333 16.333 18.167V22H13.667V13.333H16.333V14.333C16.667 13.667 17.5 13 18.5 13C20.167 13 22 14.333 22 17.667Z" fill="white"/>
-  </svg>
-);
-
 const WallOfLove: React.FC = () => (
   <section className={styles.wallOfLoveSection}>
-    {/* <div className={styles.headerBlock}>
-      <div className={styles.subheading}>HEAR IT FROM THEM</div>
-      <h1>
-        Ambitious People <span className={styles.heart}>❤️</span> LearnneX
-      </h1>
-    </div> */}
     <div className={styles.headerBlock}>
-  <div className={styles.subheading}>HEAR IT FROM THEM</div>
-  <h1 className={styles.mainHeading}>
-    Ambitious People <span className={styles.heart}>❤️</span> LearnneX
-  </h1>
-</div>
+      <div className={styles.subheading}>HEAR IT FROM THEM</div>
+      <h1 className={styles.mainHeading} style={{ color: "black", fontSize: "32px", margin: "16px 0" }}>
+        Ambitious People <span className={styles.heart} style={{ color: "red" }}>❤</span> LearnneX
+      </h1>
+    </div>
 
     <div className={styles.testimonialsGrid}>
       {testimonials.map((t, idx) => (
         <div className={styles.testimonialCard} key={idx} tabIndex={0}>
           {t.linkedin && (
             <div className={styles.linkedinBadge}>
-              <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" width={20} height={20}/>
+              <img
+                src="https://img.icons8.com/color/48/000000/linkedin.png"
+                alt="LinkedIn"
+                width={20}
+                height={20}
+              />
             </div>
           )}
           <p className={styles.testimonialText}>{t.text}</p>
@@ -112,6 +103,7 @@ const WallOfLove: React.FC = () => (
         </div>
       ))}
     </div>
+
     <button className={styles.wallButton}>See our Wall of Love</button>
   </section>
 );

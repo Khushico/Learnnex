@@ -1,0 +1,143 @@
+.wallOfLoveSection {
+  padding: 48px 0 32px 0;
+  background: #fff;
+  text-align: center;
+}
+
+
+
+.subheading {
+  font-size: 1rem;
+  color: #222;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.heart {
+  color: #e25555;
+  font-size: 1.2em;
+}
+
+.testimonialsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.testimonialCard {
+  background: #fff;
+  border-radius: 18px;
+  border: 1.5px solid #e5e5e5;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  min-height: 270px;
+  padding: 28px 20px 22px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  text-align: left;
+  transition: box-shadow 0.2s, transform 0.2s;
+  outline: none;
+}
+.testimonialCard:focus,
+.testimonialCard:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.09);
+  transform: translateY(-4px) scale(1.015);
+  border-color: #b2d5e6;
+}
+
+.linkedinBadge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #13333d;
+  border-radius: 0 18px 0 12px;
+  padding: 7px 14px 4px 14px;
+  z-index: 2;
+}
+
+.linkedinBadge img {
+  width: 20px;
+  height: 20px;
+}
+
+.testimonialText {
+  margin: 16px 0 48px 0;
+  font-size: 1.07rem;
+  color: #222;
+  min-height: 80px;
+  line-height: 1.6;
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-top: auto;
+}
+
+.avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #eee;
+}
+
+.name {
+  font-weight: 600;
+  color: #1b1b1b;
+  font-size: 1rem;
+}
+
+.role {
+  font-size: 0.93em;
+  color: #888;
+}
+
+.wallButton {
+  margin-top: 38px;
+  padding: 14px 38px;
+  border-radius: 10px;
+  border: 1.5px solid #13333d;
+  background: #fff;
+  font-weight: 500;
+  font-size: 1.08rem;
+  color: #13333d;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.wallButton:hover,
+.wallButton:focus {
+  background: #f5f8fa;
+  border-color: #1b1b1b;
+}
+
+@media (max-width: 700px) {
+  .testimonialsGrid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .headerBlock, .subheading {
+    text-align: center;
+  }
+.headerBlock h2 {
+  font-size: 2.2rem !important;
+  font-weight: 700;
+  margin: 0.2em 0 0.7em 0;
+  color: #222;
+  line-height: 1.2;
+}
+.mainHeading {
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin: 0.2em 0 0.7em 0;
+  color: #222;
+  line-height: 1.2;
+}
+}
